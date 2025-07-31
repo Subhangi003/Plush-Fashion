@@ -1,0 +1,207 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Header */
+header {
+  background-color: #2a2a2a;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.logo {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #b07d62; /* rich brown/gold */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+nav a {
+  color: #b07d62;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+/* Products */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.product {
+  border: 1px solid #ddd;
+  padding: 1rem;
+  border-radius: 8px;
+  transition: box-shadow 0.3s;
+  background: #fff;
+  text-align: center;
+}
+
+.product:hover {
+  box-shadow: 0 4px 20px rgba(176, 125, 98, 0.4);
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.product h3 {
+  margin: 0.75rem 0;
+  font-weight: 700;
+  color: #2a2a2a;
+}
+
+.product p {
+  font-size: 1.1rem;
+  color: #b07d62;
+  margin-bottom: 1rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #b07d62;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 700;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #8c6246;
+}
+
+/* Product Detail */
+.product-detail {
+  display: flex;
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.product-image img {
+  max-width: 400px;
+  border-radius: 12px;
+}
+
+.product-info {
+  max-width: 600px;
+}
+
+.product-info h2 {
+  margin-top: 0;
+  font-weight: 900;
+  color: #2a2a2a;
+}
+
+.product-info .price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #b07d62;
+  margin: 1rem 0;
+}
+
+/* Cart table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+thead th {
+  background-color: #b07d62;
+  color: white;
+  padding: 1rem;
+}
+
+tbody td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+  background-color: #f4e8dc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #2a2a2a;
+  color: #b07d62;
+  font-size: 0.9rem;
+}
+
+/* Forms: register, login */
+.auth-container {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(176, 125, 98, 0.3);
+  text-align: center;
+}
+
+.auth-container h2 {
+  margin-bottom: 1.5rem;
+  color: #b07d62;
+}
+
+.auth-container input[type="text"],
+.auth-container input[type="email"],
+.auth-container input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.auth-container .btn {
+  width: 100%;
+  padding: 0.75rem;
+  background: #b07d62;
+  border: none;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.auth-container .btn:hover {
+  background: #8c6246;
+}
+
+.auth-container .error {
+  color: red;
+  margin-bottom: 1rem;
+}
